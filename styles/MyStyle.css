@@ -1,0 +1,271 @@
+body{
+  font-family: 'Roboto Slab', serif;
+  margin: auto;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 20px;
+  right: 1px;
+  top: 50px;
+}
+.div-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu {
+  width: 100%;
+  background-color: #2d5ec2;
+  font-size: 15px;
+
+}
+.menu a{
+  margin-left: 30px;
+}
+.contacto{
+  background-color:#737373;
+  color:white;
+  text-align:center;
+  width: 100%;
+}
+.divcarimg{
+  text-align: center;
+}
+.divcarimg img{
+  width: 130%;
+}
+.divcarimg a{
+  text-decoration: none;
+  color: black;
+}
+.divSecond{
+  margin-top: 250px;
+}
+
+.hearderBack {
+  background: url(../fondoslogos/ppal.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.logo{
+  position: absolute;
+  margin-left: 60px;
+}
+.redes{
+  position: fixed;
+  margin-left: 1150px;
+  margin-top: 20px;
+}
+.login{
+  position: fixed;
+  margin-left: 900px;
+  margin-top: 20px;
+}
+
+.slider{
+  width: 30%;
+  margin-left: 400px;
+  overflow: hidden;
+}
+.slider ul{
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 30s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+.slider li{
+
+   list-style: none;
+
+}
+.slider img{
+  width: 100%;
+}
+
+@keyframes cambio{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+.ventana{
+    width: 70%;
+    margin: auto;
+    background-color: white;
+}
+.button{
+  position: absolute;
+  top: 60px;
+  background: #2d5ec2;
+  color:#fff;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0px;
+  padding: 6px 0px;
+  text-align: center;
+  width: 180px;
+  float:center;
+  text-decoration: none;
+  box-shadow: 0px 3px 0px #333333;
+  border-radius: 5px;
+}
+
+.button2{
+  position: absolute;
+  top: 48%;
+  background:#ffff;
+  color:#fff;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0px;
+  padding: 6px 0px;
+  text-align: left;
+  width: 150px;
+  float:center;
+  text-decoration: none;
+  box-shadow: 0px 3px 0px #333333;
+  border-radius: 5px;
+  margin-left: 800px;
+}
+.button3{
+  position: absolute;
+  top: 10px;
+  background: #2d5ec2;
+  color:#fff;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0px;
+  padding: 6px 0px;
+  text-align: center;
+  width: 180px;
+  float:center;
+  text-decoration: none;
+  box-shadow: 0px 3px 0px #333333;
+  border-radius: 5px;
+}
+
+.slider1{
+  margin-top: 260px;
+  width: 90%;
+  overflow: hidden;
+}
+.slider1 ul{
+  display: flex;
+  padding: 5;
+  width: auto;;
+}
+.slider1 li{
+width: auto;
+margin-left: 10px;
+   list-style: none;
+
+}
+
+div#footer{
+  width:100%;
+text-align: center;
+font-size: 15px;
+   font-family:oblique bold 120% cursive;
+
+}
+
+div#hearder{
+  width: 100%;
+  background-color:  white;
+  position:fixed;
+  height: auto;
+  left: 0px;
+  top: 0px;
+
+}
+
+a#barra:link    {
+            color:white;
+            background-color:transparent;
+           text-decoration:none;
+
+     }
+a#barra:visited {
+           color:white;
+            background-color:transparent;
+     text-decoration:none;
+         }
+a#barra:hover   {color:white;
+      text-decoration:none;
+      }
+a#barra:active  {color:white;
+           background-color:transparent;
+      text-decoration:none;
+      }
+
+a#barra1:link    {
+            color:white;
+            background-color:transparent;
+			      text-decoration:none;
+
+			}
+a#barra1:visited {
+           color:white;
+            background-color:transparent;
+			text-decoration:none;
+         }
+a#barra1:hover   {color:white;
+		   text-decoration:underline;
+		   }
+a#barra1:active  {color:white;
+           background-color:transparent;
+		   text-decoration:underline;
+		   }
+       a#barra2:link    {
+                   color:white;
+                   background-color:transparent;
+       			      text-decoration:underline;
+
+       			}
+       a#barra2:visited {
+                  color:white;
+                   background-color:transparent;
+       			text-decoration:none;
+                }
+       a#barra2:focus{color:#0052cc;
+       		   text-decoration:underline;;
+
+       }
+       a#barra2:hover   {color:#0052cc;
+       		   text-decoration:underline;
+       		   }
+
+             a#barra3:link    {
+                         color:gray;
+                         background-color:transparent;
+                         text-decoration:none;
+
+                   }
+             a#barra3:visited {
+                        color:gray;
+                         background-color:transparent;
+                   text-decoration:none;
+                      }
+            a#barra3:active  {color:#0052cc;
+                          background-color:transparent;
+                		   text-decoration:none;
+
+                      		   }
+             a#barra3:hover   {color:#0052cc;
+                    text-decoration:underline;
+                    }
