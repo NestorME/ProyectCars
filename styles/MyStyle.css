@@ -42,7 +42,7 @@ body{
   color: black;
 }
 .divSecond{
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 .hearderBack {
@@ -127,7 +127,7 @@ body{
 
 .button2{
   position: absolute;
-  top: 48%;
+  top: 43%;
   background:#ffff;
   color:#fff;
   display: inline-block;
@@ -157,6 +157,23 @@ body{
   text-decoration: none;
   box-shadow: 0px 3px 0px #333333;
   border-radius: 5px;
+}
+.button4{
+  position: absolute;
+  top: 48%;
+  background:#ffff;
+  color:#fff;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0px;
+  padding: 6px 0px;
+  text-align: left;
+  width: 150px;
+  float:center;
+  text-decoration: none;
+  box-shadow: 0px 3px 0px #333333;
+  border-radius: 5px;
+  margin-left: 800px;
 }
 
 .slider1{

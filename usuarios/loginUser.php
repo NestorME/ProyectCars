@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             mysql_close($conexion);
                         if($id){
-                            echo $id;
+                           header('Location: ../index.php?usuario='.$nombre);
                               }else {
                               echo $id;
                             echo "<!DOCTYPE html>

@@ -9,6 +9,8 @@
     <?php
 $car = $_GET['car'];
 $page = $_GET['page'];
+$idname="";
+$idname =$_GET['idname'];
 
 $hostname ="localhost";
 $database = "b33_20671515_agencia";
@@ -38,7 +40,7 @@ $conexion = mysql_connect($hostname,$username,$password);
            <h2 style="color:#0052cc">1. Precio</h2>
 
             <div>
-              <form action="finalizarcompra.php?car=<?php echo $car.'&page='.$page; ?>" method="post">
+              <form action="finalizarcompra.php?car=<?php echo $car.'&page='.$page.'&idname='.$idname; ?>" method="post">
 
               <div style="background-color:#e2e2e3;color:#555555;font-size: 17px;
                             height: 50px;line-height: 22px;padding: 11px 20px;
@@ -59,30 +61,7 @@ $conexion = mysql_connect($hostname,$username,$password);
                  <br>
                  <br>
                 <div style="color:gray;">
-                <h2 style="color:#0052cc">2. Llenar la informacion"</h2>
-
-
-                    <br>
-                  <span >Nombre(s):</span>
-                  <input style="margin-left: 50px;" type="text" name="nombres"id="nombres">
-                  <br>
-                  <br>
-                  <span >Apellidos(s):</span>
-                  <input style="margin-left: 38px;" type="text" name="apellidos" id="apellidos">
-                  <br>
-                  <br>
-                  <span >Domicilio:</span>
-                  <input style="margin-left: 55px;" type="text" name="domicilio" id="domicilio">
-                  <br>
-                  <br>
-                  <span >Telefono:</span>
-                  <input style="margin-left: 63px;" type="text" name="telefono" id="Telefono">
-                  <br>
-                  <br>
-                  <span >Correo:</span>
-                  <input  style="margin-left: 80px;" type="text" name="correo" id="Correo">
-
-                <h2 style="color:#0052cc">3. Ingrese los datos de su targeta</h2>
+                <h2 style="color:#0052cc">2. Ingrese los datos de su targeta</h2>
                   <br>
                     <span >Numero de Tarjeta:</span>
                     <input style="margin-left: 50px;" type="text" name="numtar" id="numtar">
@@ -97,7 +76,7 @@ $conexion = mysql_connect($hostname,$username,$password);
 
                     </form>
                     <input type="submit" name="submit" value="Siguiente"class="button2"
-                   style="position:absolute;top:600px;margin-left:300px;text-align:center;">
+                   style="position:absolute;top:300px;margin-left:300px;text-align:center;">
                     <br>
                    </div>
               </div>

@@ -24,7 +24,20 @@
         <a href="./usuarios/login.php" target="_self" class="button3" >&nbsp;&nbsp;
           <i class="fa  fa-user" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iniciar sesion</a>
     </div>
-  <?php }else{?>
+  <?php }else{
+    $hostname ="localhost";
+    $database = "b33_20671515_agencia";
+    $username = "root";
+    $password = "";
+    $conexion = mysql_connect($hostname,$username,$password);
+    mysql_select_db($database,$conexion)OR DIE ("Error: No es posible establecer la conexión");
+
+    $query = "select id from usuarios where mail = '$name'";
+
+     $idname = mysql_result(mysql_query($query,$conexion),0);
+
+    mysql_close($conexion);
+    ?>
      <div class="login">
        <a href="#" target="_self" class="button" >&nbsp;&nbsp;
          <i class="fa fa-user" aria-hidden="true"></i>&nbsp;<?php echo $name; ?></a>
@@ -60,7 +73,7 @@
 <br>
 <br>
 <div class="ventana">
-<iframe src="Autos.php" width="1330" height="900"  frameborder="0" name="Iframe" scrolling="no"></iframe>
+<iframe src="Autos.php?idname= <?php echo $idname; ?><" width="1330" height="900"  frameborder="0" name="Iframe" scrolling="no"></iframe>
 </div>
 <br>
 <br>

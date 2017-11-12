@@ -9,6 +9,8 @@
   <body>
     <?php
     $car =$_GET['car'];
+    $idname="";
+    $idname =$_GET['idname'];
     $hostname ="localhost";
     $database = "b33_20671515_agencia";
     $username = "root";
@@ -30,7 +32,7 @@
      $fotoppal = mysql_result(mysql_query($query,$conexion),0);
 
      mysql_close($conexion);
-  
+
      ?>
     <div >
       <br>
@@ -40,7 +42,8 @@
            <a id="barra" href="Autos.php" style="color:white;hover-color:red"><i class="fa fa-home" aria-hidden="true"></i></a> << <a id="barra" href="infoCarros.php?car=<?php echo $car ?>" style="color:white;hover:color:read"><?php echo $Tiporesult?></a>
               </div>
            <h1 style="color: white;"><?php echo $Tileresult ?></h1>
-           <a href="compra.php?car=<?php echo $car.'&page='.$Tiporesult; ?>" target="_self" class="button2" >&nbsp;&nbsp;<i class="fa fa-usd" id="camara" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comprar</a>
+           <a href="compra.php?car=<?php echo $car.'&page='.$Tiporesult.'&idname='.$idname; ?>" target="_self" class="button2" >&nbsp;&nbsp;<i class="fa fa-usd" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comprar</a>
+           <a href="prueba.php?car=<?php echo $car.'&page='.$Tiporesult.'&idname='.$idname; ?>" target="_self" class="button4" >&nbsp;&nbsp;<i class="fa  fa-car" aria-hidden="true"></i> Prueba manejo</a>
 
            <div  class="slider1">
              <ul>
