@@ -60,7 +60,7 @@
      </div>
 
      <div class="menu">
-       <a id="barra" style="color:white" href="Autos.php" target="Iframe">Inicio</a>
+       <a id="barra" style="color:white" href="Autos.php?idname= <?php echo $idname; ?>" target="Iframe">Inicio</a>
                   <a id="barra" style="color:white" href="#">Guia del Comprador</a>
                   <a id="barra"style="color:white" href="#">Mundo VolksWagen</a>
                   <a id="barra" style="color:white" href="#">Servicio</a>
@@ -73,7 +73,7 @@
 <br>
 <br>
 <div class="ventana">
-<iframe src="Autos.php?idname= <?php echo $idname; ?><" width="1330" height="900"  frameborder="0" name="Iframe" scrolling="no"></iframe>
+<iframe src="Autos.php?idname= <?php echo $idname; ?>" width="1330" height="900"  frameborder="0" name="Iframe" scrolling="no"></iframe>
 </div>
 <br>
 <br>

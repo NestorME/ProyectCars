@@ -63,7 +63,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                             $query = "insert into usuarios(id,nombre,apellido,domicilio,telefono,fechaNac,mail,password) values('','".$nombre."','".$apellido."','".$domicilio."','".$telefono."','".$fechaNac."','".$correo."','".$contra."');";
                             $id = mysql_query($query,$conexion);
-                            echo $id;
 
                             mysql_close($conexion);
 

@@ -43,7 +43,7 @@
               </div>
            <h1 style="color: white;"><?php echo $Tileresult ?></h1>
            <a href="compra.php?car=<?php echo $car.'&page='.$Tiporesult.'&idname='.$idname; ?>" target="_self" class="button2" >&nbsp;&nbsp;<i class="fa fa-usd" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comprar</a>
-           <a href="prueba.php?car=<?php echo $car.'&page='.$Tiporesult.'&idname='.$idname; ?>" target="_self" class="button4" >&nbsp;&nbsp;<i class="fa  fa-car" aria-hidden="true"></i> Prueba manejo</a>
+           <a href="pruebas/prueba.php?car=<?php echo $car.'&page='.$Tiporesult.'&idname='.$idname; ?>" target="_self" class="button4" >&nbsp;&nbsp;<i class="fa  fa-car" aria-hidden="true"></i> Prueba manejo</a>
 
            <div  class="slider1">
              <ul>
