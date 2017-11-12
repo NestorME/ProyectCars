@@ -9,10 +9,10 @@
   <body>
     <?php
     $name=$idname="";
-    $name =$_GET['name'];
+    $name =$_GET['usuario'];
     $idname =$_GET['idname'];
      ?>
-    <div >
+    <div>
    <div id="hearder" >
      <div class="logo">
     <img src="fondoslogos/logo.png" width="30%">
