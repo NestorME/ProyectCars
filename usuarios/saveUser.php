@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $conexion = mysql_connect($hostname,$username,$password);
                             mysql_select_db($database,$conexion)OR DIE ("Error: No es posible establecer la conexión");
 
-                            $query = "insert into usuarios(id,nombre,apellido,domicilio,telefono,fechaNac,mail) values('','".$nombre."','".$apellido."','".$domicilio."','".$telefono."','".$fechaNac."','".$correo."');";
+                            $query = "insert into usuarios(id,nombre,apellido,domicilio,telefono,fechaNac,mail,password) values('','".$nombre."','".$apellido."','".$domicilio."','".$telefono."','".$fechaNac."','".$correo."','".$contra."');";
                             $id = mysql_query($query,$conexion);
                             echo $id;
 
