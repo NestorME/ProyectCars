@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $idcar = $_GET["car"];
   $fecha = $_POST["date"];
   $hora = $_POST["hora"];
-
+if($idname != ""){
                             $hostname ="localhost";
                             $database = "b33_20671515_agencia";
                             $username = "root";
@@ -61,8 +61,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </body>
                             <script src='../script/back.js'></script>
                             </html>";
+                          }else{
+                            echo "<!DOCTYPE html>
+                            <html>
+
+                            <head>
+                              <link rel='stylesheet' type='text/css' href='../styles/MyStyle.css'>
+                              <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+                              <link rel='stylesheet' href='../font-awesome-4.6.1/css/font-awesome.min.css'>
 
 
+                            </head>
+                            <body>
+                            <div style='position:
+                            absolute;top:100px;font-size:50px;'>
+                            Porfavor inicie sesion
+                              </div><br>
+                              <form action='../Autos.php?idname=.$idname.' method='post'>
+
+                               <input type='submit' name='submit' value='Aceptar' class='button2'
+                              style='position:absolute;top:400px;margin-left:500px;text-align:center;'>
+                            </body>
+                            </html>";
+
+                          }
 
 }
 ?>

@@ -16,12 +16,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $contra = $_POST["contra"];
   $recontra=$_POST["recontra"];
 
-   if ($nombre=="" || $apellido=="" || $apellido == "" || $telefono == "" || $correo == "" || $fechaNac == ""){
+   if ($nombre=="" || $apellido=="" || $domicilio == "" || $telefono == "" || $correo == "" || $fechaNac == ""){
         echo "<!DOCTYPE html>
         <html>
 
         <head>
-          <link rel='stylesheet' type='text/css' href='http://localhost/ProyectoCine/MyStyle.css'>
+          <link rel='stylesheet' type='text/css' href='../styles/MyStyle.css'>
           <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
           <link rel='stylesheet' href='font-awesome-4.6.1/css/font-awesome.min.css'>
 
@@ -39,9 +39,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <html>
 
         <head>
-          <link rel='stylesheet' type='text/css' href='http://localhost/ProyectoCine/MyStyle.css'>
+          <link rel='stylesheet' type='text/css' href='../styles/MyStyle.css'>
           <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-          <link rel='stylesheet' href='font-awesome-4.6.1/css/font-awesome.min.css'>
+          <link rel='stylesheet' href='../font-awesome-4.6.1/css/font-awesome.min.css'>
 
 
         </head>

@@ -39,7 +39,7 @@
     mysql_close($conexion);
     ?>
      <div class="login">
-       <a href="#" target="_self" class="button" >&nbsp;&nbsp;
+       <a href="alert.php?usuario=<?php echo $name; ?>" target="_self" class="button" >&nbsp;&nbsp;
          <i class="fa fa-user" aria-hidden="true"></i>&nbsp;<?php echo $name; ?></a>
      </div>
    <?php } ?>
