@@ -77,13 +77,49 @@ if($id){
   </div>
 
   <div id="Prueba" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
+    <?php
+    $conexion = mysql_connect($hostname,$username,$password);
+    mysql_select_db($database,$conexion)OR DIE ("Error: No es posible establecer la conexión");
+
+    $query = "select * from pruebas where idUser = '$id'";
+
+     $data = mysql_query($query,$conexion);
+     while($row=mysql_fetch_row($data))
+            {
+    echo "<div class='divuserinfo'>
+      <br>
+      <br>
+      <h2 style='color:#0052cc;margin-left:50px;'>1. Tus pruebas de manejo</h2>
+      <br>
+      <h3>Domicilio:&nbsp;". $row[3]."</h3>
+      <h3>Telefono:&nbsp;". $row[4]."</h3>
+      </div>";
+    }
+    mysql_close($conexion);
+     ?>
   </div>
 
   <div id="Pagos" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
+    <?php
+    $conexion = mysql_connect($hostname,$username,$password);
+    mysql_select_db($database,$conexion)OR DIE ("Error: No es posible establecer la conexión");
+
+    $query = "select * from pagos where idUser = '$id'";
+
+     $data = mysql_query($query,$conexion);
+     while($row=mysql_fetch_row($data))
+            {
+    echo "<div class='divuserinfo'>
+      <br>
+      <br>
+      <h2 style='color:#0052cc;margin-left:50px;'>1. Tus Pagos</h2>
+      <br>
+      <h3>Domicilio:&nbsp;". $row[3]."</h3>
+      <h3>Telefono:&nbsp;". $row[4]."</h3>
+      </div>";
+    }
+    mysql_close($conexion);
+     ?>
   </div>
 
   <script>

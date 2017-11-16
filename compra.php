@@ -67,12 +67,12 @@ $conexion = mysql_connect($hostname,$username,$password);
                     <input style="margin-left: 50px;" type="text" name="numtar">
                     <br>
                     <br>
-                    <span >Fecha de Vencimiento:</span>
-                    <input style="margin-left: 18px;" type="text" name="fechavenc">
+                    <span >Fecha de dia de pago:</span>
+                    <input style="margin-left: 33px;" type="date" name="date" value="2014-02-09">
                     <br>
                     <br>
-                    <span > Código de Seguridad:</span>
-                    <input style="margin-left: 34px;" type="text" name="codtar"><br>
+                    <span > Cantidad de pago:</span>
+                    <input style="margin-left: 34px;" type="text" name="pay"><br>
                     <br>
                     <br>
                     <h2 style="color:#0052cc">3. Ingrese la contraseña de su cuenta</h2>

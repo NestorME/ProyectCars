@@ -5,7 +5,7 @@ header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
 
 $idname =$passwd = $car="";
-$numtar=$fechaven=$codtar=$page= "";
+$numtar=$pay=$fechaven=$codtar=$page= "";
 
 $car = $_GET['car'];
 $page = $_GET['page'];
@@ -13,9 +13,9 @@ $idname = $_GET['idname'];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $numtar = $_POST["numtar"];
-  $fechaven = $_POST["fechavenc"];
+  $fechaven = $_POST["date"];
   $passwd = $_POST["pass"];
-  $codtar = $_POST["codtar"];
+  $pay = $_POST["pay"];
   $hostname ="localhost";
   $database = "b33_20671515_agencia";
   $username = "root";
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    $id = mysql_result(mysql_query($query,$conexion),0);
 
 if($id){
-  if ($numtar=="" || $fechaven=="" || $codtar=="") {
+  if ($numtar=="" || $fechaven=="" || $pay=="") {
 
                             echo "<!DOCTYPE html>
                             <html>
@@ -51,6 +51,10 @@ if($id){
 
 
                             $query = "insert into compras(id,idauto,idUser,numtarj,fecha) values('','".$car."','".$idname."','".$numtar."','".date("Y/m/d")."');";
+
+                            $idpay=mysql_query($query,$conexion);
+
+                            $query = "insert into pagos(id,idUser,cantidad,fecha,idPay) values('','".$id."','".$pay."','".$fechaven."','".$idpay."');";
 
                             mysql_query($query,$conexion);
                             $query = "select * from usuarios where id = '$idname'";
@@ -118,7 +122,7 @@ if($id){
   <div style='position:
   absolute;top:100px;font-size:50px;'>
   Porfar inicie sesion
-  <br> Antes de hacer una compra  </div><br>
+  <br> Antes de hacer una compra o verifique su contraseña </div><br>
   <form action='Autos.php?idname=".$idname."' method='post'>
    <input type='submit' name='submit' value='Aceptar' class='button2'
   style='position:absolute;top:400px;margin-left:500px;text-align:center;'>
