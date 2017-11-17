@@ -77,49 +77,114 @@ if($id){
   </div>
 
   <div id="Prueba" class="tabcontent">
+    <div class='divuserinfo'>
+      <br>
+      <br>
+      <h2 style='color:#0052cc;margin-left:50px;'>2. Tus pruebas de manejo</h2>
+      <br>
     <?php
     $conexion = mysql_connect($hostname,$username,$password);
     mysql_select_db($database,$conexion)OR DIE ("Error: No es posible establecer la conexión");
 
-    $query = "select * from pruebas where idUser = '$id'";
+    $query = "SELECT pruebas.id, pruebas.fecha, pruebas.hora, cars.tipo FROM pruebas INNER JOIN cars ON pruebas.idAuto=cars.id where idUser = '$id'";
 
      $data = mysql_query($query,$conexion);
+     if($data){
+   echo "<table style='width:100%'>
+          <tr>
+            <th>Numero de prueba</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Automovil</th>
+          </tr>";
      while($row=mysql_fetch_row($data))
             {
-    echo "<div class='divuserinfo'>
-      <br>
-      <br>
-      <h2 style='color:#0052cc;margin-left:50px;'>1. Tus pruebas de manejo</h2>
-      <br>
-      <h3>Domicilio:&nbsp;". $row[3]."</h3>
-      <h3>Telefono:&nbsp;". $row[4]."</h3>
-      </div>";
+    echo "
+    <tr>
+      <th>". $row[0]."</th>
+      <th>". $row[1]."</th>
+      <th>". $row[2]."</th>
+      <th>". $row[3]."</th>
+    </tr>";
     }
+    echo "</table>";
+  }else {
+    echo "<h3>No tienes ninguna prueba de manejo proxima</h3>";
+  }
     mysql_close($conexion);
      ?>
+     </div>
   </div>
 
   <div id="Pagos" class="tabcontent">
+    <div class='divuserinfo'>
+      <br>
+      <br>
+      <h2 style='color:#0052cc;margin-left:50px;'>3. Tus Pagos</h2>
+      <br>
+      <h3 style='color:#0052cc;margin-left:50px;'>Informacion de la compra</h3>
+      <?php
+      $conexion = mysql_connect($hostname,$username,$password);
+      mysql_select_db($database,$conexion)OR DIE ("Error: No es posible establecer la conexión");
+
+      $query = "SELECT compras.id, cars.tipo, compras.fecha FROM compras INNER JOIN cars ON compras.idAuto=cars.id where compras.idUser = '$id'";
+
+       $data = mysql_query($query,$conexion);
+       if($data){
+     echo "<table style='width:100%'>
+            <tr>
+              <th>Id de Compra</th>
+              <th>Auto</th>
+              <th>Fecha de la compra</th>
+            </tr>";
+       while($row=mysql_fetch_row($data))
+              {
+      echo "
+      <tr>
+        <th>". $row[0]."</th>
+        <th>". $row[1]."</th>
+        <th>". $row[2]."</th>
+      </tr>";
+      }
+      echo "</table>";
+    }else {
+      echo "<h3>No tienes ninguna compra</h3>";
+    }
+      mysql_close($conexion);
+       ?>
+      <h3 style='color:#0052cc;margin-left:50px;'>historial de pagos</h3>
     <?php
     $conexion = mysql_connect($hostname,$username,$password);
     mysql_select_db($database,$conexion)OR DIE ("Error: No es posible establecer la conexión");
 
-    $query = "select * from pagos where idUser = '$id'";
+    $query = "SELECT pagos.id, pagos.cantidad, pagos.fecha, compras.numtarj FROM pagos INNER JOIN compras ON pagos.idPay=compras.id where pagos.idUser = '$id'";
 
      $data = mysql_query($query,$conexion);
+     if($data){
+   echo "<table style='width:100%'>
+          <tr>
+            <th>Id de pago</th>
+            <th>Cantidad</th>
+            <th>Fecha</th>
+            <th>Numero de tarjeta</th>
+          </tr>";
      while($row=mysql_fetch_row($data))
             {
-    echo "<div class='divuserinfo'>
-      <br>
-      <br>
-      <h2 style='color:#0052cc;margin-left:50px;'>1. Tus Pagos</h2>
-      <br>
-      <h3>Domicilio:&nbsp;". $row[3]."</h3>
-      <h3>Telefono:&nbsp;". $row[4]."</h3>
-      </div>";
+    echo "
+    <tr>
+      <th>". $row[0]."</th>
+      <th>". $row[1]."</th>
+      <th>". $row[2]."</th>
+      <th>". $row[3]."</th>
+    </tr>";
     }
+    echo "</table>";
+  }else {
+    echo "<h3>No tienes ninguna compra</h3>";
+  }
     mysql_close($conexion);
      ?>
+     </div>
   </div>
 
   <script>
