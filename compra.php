@@ -80,8 +80,8 @@ $conexion = mysql_connect($hostname,$username,$password);
                     <input style="margin-left: 34px;" type="password" name="pass">
 
                     </form>
-                    <input type="submit" name="submit" value="Siguiente"class="button2"
-                   style="position:absolute;top:300px;margin-left:300px;text-align:center;">
+                    <input type="submit" name="submit" value="Siguiente"class="button5"
+                   style="position:absolute;top:400px;margin-left:300px;text-align:center;">
                     <br>
                    </div>
               </div>

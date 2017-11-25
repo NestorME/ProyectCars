@@ -22,7 +22,7 @@
                   <span >Contraseña:</span>
                   <input style="margin-left: 35px;" type="password" name="contra">
                     </form>
-                    <input type="submit" name="submit" value="Iniciar Sesion"class="button2"
+                    <input type="submit" name="submit" value="Iniciar Sesion"class="button5"
                    style="position:absolute;top:200px;margin-left:100px;text-align:center;">
                     <br>
            </div>

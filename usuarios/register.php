@@ -42,7 +42,7 @@
                   <span >Repetir Contraseña:</span>
                   <input  style="margin-left: 80px;" type="password" name="recontra" >
                     </form>
-                    <input type="submit" name="submit" value="Registrarme"class="button2"
+                    <input type="submit" name="submit" value="Registrarme"class="button5"
                    style="position:absolute;top:400px;margin-left:100px;text-align:center;">
                     <br>
            </div>

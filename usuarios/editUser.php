@@ -41,7 +41,7 @@
                   <span >Correo:</span>
                   <input  style="margin-left: 80px;" type="email" name="correo"  value="<?php echo $row[6]?>">
                     </form>
-                    <input type="submit" name="submit" value="Guardar"class="button2"
+                    <input type="submit" name="submit" value="Guardar"class="button5"
                    style="position:absolute;top:200px;margin-left:100px;text-align:center;">
                     <br>
            </div>

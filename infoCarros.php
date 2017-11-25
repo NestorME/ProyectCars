@@ -39,7 +39,7 @@
          <div style="margin-left:15px; background-image: url(cars/<?php echo $fotoppal;?> );background-repeat: no-repeat;background-size:cover; width:950px; height:450px;padding: 15px;">
            <div style="color: white">
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a id="barra" href="Autos.php" style="color:white;hover-color:red"><i class="fa fa-home" aria-hidden="true"></i></a> << <a id="barra" href="infoCarros.php?car=<?php echo $car ?>" style="color:white;hover:color:read"><?php echo $Tiporesult?></a>
+           <a id="barra" href="Autos.php?idname=<?php echo $idname;?>" style="color:white;hover-color:red"><i class="fa fa-home" aria-hidden="true"></i></a> << <a id="barra" href="infoCarros.php?car=<?php echo $car."&idname=".$idname ?>" style="color:white;hover:color:read"><?php echo $Tiporesult?></a>
               </div>
            <h1 style="color: white;"><?php echo $Tileresult ?></h1>
            <a href="compra.php?car=<?php echo $car.'&page='.$Tiporesult.'&idname='.$idname; ?>" target="_self" class="button2" >&nbsp;&nbsp;<i class="fa fa-usd" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comprar</a>

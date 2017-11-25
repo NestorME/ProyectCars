@@ -75,7 +75,7 @@
 
                               <form action='../index.php?usuario=$correo' method='post'>
 
-                               <input type='submit' name='submit' value='Aceptar' class='button2'
+                               <input type='submit' name='submit' value='Aceptar' class='button5'
                               style='position:absolute;top:400px;margin-left:500px;text-align:center;'>
                                <br>
                                </form>

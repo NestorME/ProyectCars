@@ -60,13 +60,13 @@ if($id){
 
      <form action='./usuarios/editUser.php?idname=$row[0]' method='post'>
 
-      <input type='submit' name='submit' value='Editar' class='button2'
+      <input type='submit' name='submit' value='Editar' class='button5'
      style='position:absolute;top:300px;margin-left:200px;text-align:center;'>
      </form>
 
      <form action='./usuarios/changePass.php?idname=$row[0]&user=$row[6]' method='post'>
 
-      <input type='submit' name='submit' value='Cambiar Contraseña' class='button2'
+      <input type='submit' name='submit' value='Cambiar Contraseña' class='button5'
      style='position:absolute;top:300px;margin-left:400px;text-align:center;'>
       <br>
       </form>

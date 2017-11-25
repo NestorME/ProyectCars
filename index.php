@@ -39,8 +39,11 @@
     mysql_close($conexion);
     ?>
      <div class="login">
-       <a href="alert.php?usuario=<?php echo $name; ?>" target="_self" class="button" >&nbsp;&nbsp;
+       <a href="alert.php?usuario=<?php echo $name; ?>" target="_self" class="button3" >&nbsp;&nbsp;
          <i class="fa fa-user" aria-hidden="true"></i>&nbsp;<?php echo $name; ?></a>
+
+         <a href="index.php" target="_self" class="button" >&nbsp;&nbsp;
+           <i class="fa fa-close" aria-hidden="true"></i>&nbsp; Cerrar sesión</a>
      </div>
    <?php } ?>
 
@@ -48,7 +51,8 @@
            Visitanos: <br>
            <a href="#" target="_self"><img src="cars/face.png" width="10%"></a>
            <a href="#" target="_self"><img src="cars/twiter.png" width="10%"></a>
-           <a href="#" target="_self"><img src="cars/insta.jpeg" width="10%"></a> <br><br>
+           <a href="#" target="_self"><img src="cars/insta.jpeg" width="10%"></a>
+           <a href="map.php" target="_self"><img src="cars/ubicacion.png" width="10%"></a><br>
     </div>
      <div class="slider">
        <ul>
@@ -130,7 +134,7 @@
 </div>
 
    <div id="footer" style="background-color: #0052cc; color:white">
-   DERECHOS RESERVADOS &copy; CADENA MEXICANA DE EXHIBICIÓN S.A. DE C.V. 2016.SITIO DESARROLLADO POR CUTONALA.
+   DERECHOS RESERVADOS &copy; CADENA MEXICANA DE EXHIBICIÓN S.A. DE C.V. 2017.SITIO DESARROLLADO POR CUTONALA.
     <br>
 
    </div>
