@@ -34,7 +34,7 @@ if($id){
                             echo "<!DOCTYPE html>
                             <html>
                             <head>
-                              <link rel='stylesheet' type='text/css' href='http://localhost/ProyectoCine/MyStyle.css'>
+                              <link rel='stylesheet' type='text/css' href='../styles/MyStyle.css'>
                               <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
                               <link rel='stylesheet' href='font-awesome-4.6.1/css/font-awesome.min.css'>
                             </head>
@@ -68,7 +68,7 @@ if($id){
                             <html>
 
                             <head>
-                              <link rel='stylesheet' type='text/css' href='styles/MyStyle.css'>
+                              <link rel='stylesheet' type='text/css' href='./styles/MyStyle.css'>
                               <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
                               <link rel='stylesheet' href='font-awesome-4.6.1/css/font-awesome.min.css'>
 
@@ -112,7 +112,7 @@ if($id){
   <html>
 
   <head>
-    <link rel='stylesheet' type='text/css' href='http://localhost/ProyectoCine/MyStyle.css'>
+    <link rel='stylesheet' type='text/css' href='./styles/MyStyle.css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='font-awesome-4.6.1/css/font-awesome.min.css'>
 
